@@ -1,0 +1,11 @@
+[project]
+name = "lpt-serverless-t1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "databricks-sdk>=0.50.0",
+    "databricks-connect>=14.0.0",
+    "pip>=25.0.1",
+]
