@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "github-mcp-server",
+      "args": ["stdio"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "$(security find-generic-password -a $USER -s github-mcp-token -w)"
+      }
+    },
+    "gitea": {
+      "command": "gitea-mcp-server",
+      "args": ["stdio"],
+      "env": {}
+    },
+    "Figma": {
+      "url": "http://127.0.0.1:3845/sse"
+    }
+  }
+}
