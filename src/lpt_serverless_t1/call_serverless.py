@@ -14,5 +14,5 @@ spark = DatabricksSession.builder.remote(serverless=True).getOrCreate()
 
 spark.sql("SELECT * FROM lpt.dbdemos_retail_c360.churn_users limit 5").show()
 
-# Close the Spark session
+# Close the Spark session   
 spark.stop()
